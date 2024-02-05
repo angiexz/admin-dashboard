@@ -10,10 +10,12 @@ body{
     margin: 0px;
 }
 h4{
-    margin: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 h5{
-    margin:0.5em;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
 }
 
 .top-header,
@@ -24,12 +26,20 @@ h5{
 /*top-header*/
 .top-header{
     padding-right: 5vw;
+    padding-top: 2vw;
     padding-left:5vw;
     width:70vw;
     background-color: white;
     grid-row-start:1;
     display:grid;
-    grid-template-columns: auto 40vw auto auto auto auto;
+    grid-template-columns: 20px 40vw 20px 20px auto;
+    justify-content:space-between;
+}
+#search_bar{
+    width: 40 vw;
+    background-color: rgb(235, 235, 235);
+    border-radius: 12px;
+    height: 20px;
 }
 button{
     height: 30px;
@@ -37,6 +47,7 @@ button{
     background-color: rgb(107, 187, 197);
     border-radius: 12px;
 }
+
 /*header*/
 .header{
     padding-right: 5vw;
@@ -46,6 +57,16 @@ button{
     grid-row-start:2;
     display:grid;
     grid-template-columns: auto 35vw auto auto auto;
+    align-items: center;
+}
+.nav-title-icon{
+    width: 50px;
+    height: 50px;
+}
+.nav-title{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
 
 /*body*/
@@ -79,10 +100,13 @@ button{
     width: 90%;
     height:fit-content;
     display:grid;
+    box-shadow:3px 3px 5px grey;
 }
 .icons{
     display:grid;
     grid-template-columns: auto auto auto;
+    justify-content: right;
+    gap: 5px;
 }
 .icon{
     width:20px;
@@ -99,6 +123,7 @@ button{
     grid-column:2/span 1;
     width: 80%;
     border-radius: 12px;
+    box-shadow:3px 3px 5px grey;
 }
 .announcement{
     border-bottom-style: solid;
@@ -116,6 +141,7 @@ button{
     grid-row:4/span 1;
     grid-column:2/span 1;
     border-radius: 12px;
+    box-shadow:3px 3px 5px grey;
 }
 .trend{
     display:grid;
@@ -124,12 +150,21 @@ button{
 }
 
 /*Nav Bar*/
-.nav{
+/**.nav{
     display:grid;
-    grid-template-columns:auto auto;
-    padding-left: 5vw;
-    width:15vw;
+    grid-template-columns:30% auto;
+    grid-template-rows:30%;
+    padding-left: 2vw;
+    width:18vw;
     align-content:left;
+}**/
+
+.nav{
+    display:flex;
+    align-self: center;
+    margin-left: 2vw;
+    color:white;
+    font-weight:bold;
 }
 .nav_bar{
     grid-column: 1/span 1;
@@ -141,6 +176,9 @@ button{
     align-content: space-between;
 }
 .nav-icon{
-    width:30%;
-    height:30%;
+    width:10%;
+    height:10%;
+}
+.nav-page{
+    margin-top:2px;
 }
