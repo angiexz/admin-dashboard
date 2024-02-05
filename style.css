@@ -1,0 +1,74 @@
+*{
+    color:blue;
+}
+body{
+    display:grid;
+    grid-template-columns:25vw 75vw;
+    grid-template-rows:5vw 10vw auto;
+}
+.nav-bar{
+    grid-column-start:1;
+    grid-column-end:1;
+}
+.top-header,
+.header,
+.content{
+    grid-column-start:2;
+}
+/*top-header*/
+.top-header{
+    grid-row-start:1;
+    display:grid;
+    grid-template-columns: auto 40vw auto auto auto auto;
+}
+/*header*/
+.header{
+    grid-row-start:2;
+    display:grid;
+    grid-template-columns: auto 35vw auto auto auto;
+}
+
+/*body*/
+.content{
+    grid-row-start:3;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto auto;
+}
+#your_project{
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+}
+#Projects{
+    grid-row: 2/span 2;
+    grid-column: 1/span 2;
+    display:grid;
+    grid-template-columns: 50% 50%; 
+}
+#announcement-title{
+    grid-row: 1/ span 1;
+    grid-column: 2 /span 2;
+}
+#Announcements{
+    grid-row:2/span 1;
+    grid-column:2/span 1;
+}
+#trending-title{
+    grid-row: 3/span 1;
+    grid-column: 2/ span 2;
+}
+#Trending{
+    grid-row:4/span 1;
+    grid-column:2/span 1;
+}
+.trend{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+/*Nav Bar*/
+.nav{
+    display:grid;
+    grid-template-columns:auto auto;
+    color:brown;
+}
