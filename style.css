@@ -175,17 +175,26 @@ button{
 }
 .nav_bar{
     grid-column: 1/span 1;
-    height: 100 vh;
     grid-row: 1/span 3;
     background-color: rgb(107, 187, 197);
     display:grid;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-    align-content: space-between;
+    align-content: start;
+    row-gap: 30px;
 }
 .nav-icon{
     width:30px;
     height:30px;
+    margin-right: 2vw;
 }
 .nav-page{
-    margin-top:2px;
+    align-self:center;
+}
+h2{
+    color:white;
+}
+.nav-title{
+    display:grid;
+    grid-template-columns:50px auto;
+    padding-left: 1vw;
 }
