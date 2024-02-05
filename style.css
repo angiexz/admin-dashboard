@@ -154,6 +154,7 @@ button{
 .trend-logo{
     width:60px;
     height:60px;
+    fill:rgb(230, 187, 96);
 }
 
 /*Nav Bar*/
@@ -186,6 +187,7 @@ button{
     width:30px;
     height:30px;
     margin-right: 2vw;
+    fill: white;
 }
 .nav-page{
     align-self:center;
@@ -196,5 +198,8 @@ h2{
 .nav-title{
     display:grid;
     grid-template-columns:50px auto;
-    padding-left: 1vw;
+    padding-left: 2vw;
+}
+.nav-title-icon{
+    fill:white;
 }
