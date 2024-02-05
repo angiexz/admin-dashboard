@@ -145,8 +145,15 @@ button{
 }
 .trend{
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 80px auto;
     width: 100%;
+}
+.trend-text{
+    align-self: left;
+}
+.trend-logo{
+    width:60px;
+    height:60px;
 }
 
 /*Nav Bar*/
@@ -176,8 +183,8 @@ button{
     align-content: space-between;
 }
 .nav-icon{
-    width:10%;
-    height:10%;
+    width:30px;
+    height:30px;
 }
 .nav-page{
     margin-top:2px;
