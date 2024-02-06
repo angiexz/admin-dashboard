@@ -94,6 +94,7 @@ button{
     display:grid;
     grid-template-columns: 67.5% 27.5%;
     grid-template-rows: auto auto auto;
+    justify-content:center;
 }
 #your_project{
     grid-row: 1/span 1;
